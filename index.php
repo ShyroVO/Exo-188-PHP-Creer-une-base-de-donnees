@@ -23,13 +23,13 @@
 // TODO Votre code ici bas.
 
 try {
-    $maConnexion = ........
+    $maConnexion = new PDO("mysql:host=localhost;dbname=intro_sql_phpmyadmin;charset=utf8", root , '');
 
     $request = "
         Ma super requête SQL pour créer une base de données.
     ";
 
-    $maConnexion->une super méthode pour exécuter ma requete
+    $maConnexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     echo "La base de données intro_sql a bien été créée.";
 }
